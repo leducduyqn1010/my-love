@@ -53,14 +53,14 @@
     </style>
 </head>
 <body>
- <h2>My đồng ý cùng anh xem phim vào ngày 01/03 nhé❤️ 🥰</h2>
+ <h2>Ngày 22/03 mình cùng nhau hẹn hò nhé❤️ 🥰</h2>
 
     <button id="agree" class="btn" onclick="acceptLove()">Em đồng ý</button>
     <button id="disagree" class="btn" onclick="refuseLove()">Không đồng ý</button>
 
     <!-- Popup -->
     <div id="popup" class="popup">
-        <p>Yeah, 01/03 anh đón em nha ❤️</p>
+        <p>Yeah, 22/03 anh đón em nha ❤️</p>
         <button onclick="closePopup()">OK nhaa 😘</button>
     </div>
 
@@ -71,7 +71,8 @@
         let disagreeCount = 0;
 
         function acceptLove() {
-            popup.style.display = "block"; // Hiện popup
+            // popup.style.display = "block"; // Hiện popup
+            window.location.href = "heart.html"
         }
 
         function closePopup() {
@@ -80,11 +81,11 @@
 
         function refuseLove() {
             let messages = [
-                //"Anh sẽ buồn đấy 😢",
-               // "Anh buồn 😭",
-               // "Anh buồn lắm 😔",
-               // "Anh buồn mà 🥺"
-               "Thế xem phim ma + ngồi Sweetbox + bắp rang phomai + coca nhé 🥰"
+               "Mình mua trà sữa oolong ở POP 🧋",
+               "Cùng nhau chụp Photo booth ở Tocepo 😜",
+               "Cùng nhau Lượn lờ ở Nhơn Hải ăn bánh xèo và ngắm hoàng hôn 🌇",
+               "Cùng nhau thưởng thức một bộ phim 🎥",
+               "Ăn gà rán Jollibee 🍗"
             ];
 
             // Cập nhật text theo thứ tự rồi lặp lại
